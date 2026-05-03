@@ -491,10 +491,13 @@ Sistem **The Wired** ini dirancang untuk menghubungkan berbagai entitas dalam sa
 
 #### Kendala
 1. Tidak bisa connect ke server
+   
    Selama pengujian, client tidak dapat terhubung ke server sehingga komunikasi tidak dapat dilakukan. 
    Penyebab: Server dalam kondisi tidak aktif : server sebelumnya telah dihentikan akibatnya connect gagal.
    Solusi: Memastikan server aktif sebelum client dijalankan dengan menjalankan ulang server (`wired.c`).
+   
 2. Kesalahan format username admin
+   
    Ketentuan soal hanyalah diperbolehkan untuk mengganti password dan nama admin tetap `The Knights`. Namun saat pengerjaan kurang teliti dalam membaca soal sehingga terjadi miss pada penulisan nama admin.
    Solusi: melakukan perubahan pada kode dalam file `protocol.h`
    ```
