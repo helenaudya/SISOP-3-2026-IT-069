@@ -42,6 +42,7 @@ Sistem **The Wired** ini dirancang untuk menghubungkan berbagai entitas dalam sa
    - `wired.c`    : server utama
    - `navi.c`     : client
 2. Penjelasan Kode
+   
    a. `protocol.h`
       ```
       #ifndef PROTOCOL_H
@@ -101,6 +102,7 @@ Sistem **The Wired** ini dirancang untuk menghubungkan berbagai entitas dalam sa
       berfungsi untuk membedakan jenis client dalam sistem. Untuk tipe normal bisa chat (broadcast), sedangkan tipe admin tidak bisa ikut broadcast tetapi bisa menjalankan command khusus.
 
    b. `protocol.c`
+   
       File `protocol.c` berfungsi sebagai implementasi dari fungsi-fungsi utilitas yang digunakan oleh seluruh sistem.
       ```
       void trim_newline(char *str) {
@@ -141,6 +143,7 @@ Sistem **The Wired** ini dirancang untuk menghubungkan berbagai entitas dalam sa
       berfungsi untuk menyimpan semua aktivitas sistem ke file `history.log`
 
    c. `wired.c`
+   
       File `wired.c` berfungsi sebagai server pusat yang mengeloa keseluruhan komunikasi dalam "The Wired", termasuk koneksi cient, broadcast pesan, autentikasi admin, logging, dan kontrol sistem.
       ```
       typedef struct {
@@ -392,6 +395,7 @@ Sistem **The Wired** ini dirancang untuk menghubungkan berbagai entitas dalam sa
       }
       ```
    d. `navi.c`
+   
       File `navi.c` berfungsi sebagai antarmuka client yang memungkinkan user untuk terhubung ke server, mengirim pesan, menerima broadcast, serta melakukan disconnect.
       ```
       int client_socket;
