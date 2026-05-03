@@ -31,6 +31,7 @@ Sistem **The Wired** ini dirancang untuk menghubungkan berbagai entitas dalam sa
 11. Manajemen client
     
    Sistem harus mampu menangani banyak koneksi dan mendeteksi client yang disconnect.
+   
 13. Client `NAVI`
 
    Bertindak sebagai terminal komunikasi yang mendukung fitur input pesan, menerima broadcast, dan disconnect degan `/exit`.
