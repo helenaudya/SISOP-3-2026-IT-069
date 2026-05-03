@@ -11,21 +11,28 @@ Pada praktikum Sistem Operasi Modul 3 ini, kita diminta untuk mengimlementasikan
   
 Sistem **The Wired** ini dirancang untuk menghubungkan berbagai entitas dalam satu jaringan komunikasi. Setiap client yang terhubung wajib memiliki identitas unik berupa nama, dan komunikasi antar client dapat dilakukan secara realtime melalui mekanisme jaringan ini. Adapun beberapa fitur pada sistem yang harus dipenuhi:
 1. Koneksi jaringan yang stabil
+   
    Client harus terhubung ke server menggunakan IP dan port yang ditentukan di file protocol.
-2. Identitas client
+3. Identitas client
+   
    Setiap client harus memiliki identitas unik dan tidak boleh ada dua client dengan nama yang sama.
-3. Broadcast komunikasi
+5. Broadcast komunikasi
+   
    Pesan dari client akan diteruskan ke seluruh client aktif lainnya secara real time.
-4. Logging aktivitas
+7. Logging aktivitas
+   
    Semua aktivitas tercatat dalam file `history.log` dengan format log `[YYYY-MM-DD HH:MM:SS] [Actor] [Message]`.
-5. Admin `The Knights`
+9. Admin `The Knights`
+    
    Memiliki seluruh akses khusus dengan autentikasi password. Admin dapat menjalankan:
    - Jumlah user aktif
    - Melihat uptime server
    - Melakukan emergency shutdown
-6. Manajemen client
+11. Manajemen client
+    
    Sistem harus mampu menangani banyak koneksi dan mendeteksi client yang disconnect.
-7. Client `NAVI`
+13. Client `NAVI`
+
    Bertindak sebagai terminal komunikasi yang mendukung fitur input pesan, menerima broadcast, dan disconnect degan `/exit`.
 
 #### Langkah Penyelesaian
