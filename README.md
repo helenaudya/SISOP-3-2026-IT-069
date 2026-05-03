@@ -8,6 +8,7 @@
 Pada praktikum Sistem Operasi Modul 3 ini, kita diminta untuk mengimlementasikan suatu sistem komunikasi berbasis jaringan yang disebut **The Wired** di mana sistem ini terdiri dari dua komponen utama yaitu:
 - Server (wired) sebagai pusat komunikasi
 - Client (navi) sebagai entitas pengguna
+  
 Sistem **The Wired** ini dirancang untuk menghubungkan berbagai entitas dalam satu jaringan komunikasi. Setiap client yang terhubung wajib memiliki identitas unik berupa nama, dan komunikasi antar client dapat dilakukan secara realtime melalui mekanisme jaringan ini. Adapun beberapa fitur pada sistem yang harus dipenuhi:
 1. Koneksi jaringan yang stabil
    Client harus terhubung ke server menggunakan IP dan port yang ditentukan di file protocol.
